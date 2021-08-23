@@ -1,0 +1,57 @@
+@import url ("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"); 
+
+.App {
+  background-color: #d0ffe7;
+}
+
+
+:root {
+  --primary-black: rgb(0, 0, 0);
+  --primary-brown: #e27500;
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+
+body {
+   font-size: "Roboto Condesed" sans-serif; 
+   background-color: #9dedff;
+} 
+
+/*---------------Navbar-----------------*/
+
+.logo {
+  width: 16.25rem;
+}
+
+/*---------------Menu Links-----------------*/
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.038rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  /* text-transform: lowercase; */
+  font-weight: 500;
+
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 00.75rem;  
+  color: var(--primary-black) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active  :focus {
+  border-top: 0.1875rem solid var(--primary-brown);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 00.1875rem solid var(--primary-brown);
+}
