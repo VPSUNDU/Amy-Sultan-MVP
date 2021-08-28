@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 var studentsRouter = require('./routes/students');
 var bibleVerseRouter = require('./routes/bibleVerse');
+// var Board = require('./src/Board');
+// var Card = require('./src/Card');
 
 var app = express();
 

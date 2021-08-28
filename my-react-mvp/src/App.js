@@ -11,9 +11,9 @@ function App() {
 	return (
 		<Router>
 			<div>
-				<nav className="navbar navbar-info bg-info justify-content-between">
-					<Navbar />
-				</nav>
+				<nav className="navbar navbar-info bg-info justify-content-between"></nav>
+				
+				<Navbar />
 				
 				<Switch>
 					<Route path="/Home" exact component={Home} />
@@ -21,7 +21,7 @@ function App() {
 					<Route path="/Student" component={Student} />
 				</Switch>
 			</div>
-
+			
 			<div class="content flex">
 				<p>created by J.A.S. | 2021 | First MVP</p>
 			</div>

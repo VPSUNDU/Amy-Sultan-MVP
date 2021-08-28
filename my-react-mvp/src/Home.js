@@ -1,30 +1,18 @@
 import React from "react";
+import Slideshow from "./components/Slideshow";
 
 function Homepage() {
 	return (
-		<div>
-			<figure class="snip0056">
-				<figcaption>
-					<h2>Hi! Welcome</h2>
-					<p>
-                    Learning Bible verses can feel daunting.
-					<br></br>
-					How to you start and what verses should
-					<br></br>
-					you choose? This website is created to
-					<br></br>
-					help our kids to memorize and
-					<br></br>
-					to make it fun.
-					</p>
-				</figcaption>
-				<img
-					src="https://churchleaders-eszuskq0bptlfh8awbb.stackpathdns.com/wp-content/uploads/2015/02/child_bible_asian.jpg"
-					alt="boy-reading-bible"
-				/>
-				<div class="position">Home Page</div>
-			</figure>
-			
+		<div class="css-slideshow">
+			<div class="css-container">
+				<h2>Hi! Welcome</h2>
+				<p>
+        		Learning Bible verses can feel daunting.How to start and what verses should
+				you choose? This website is created to help our kids to memorize and to make it fun.
+				Sunday school teachers can add new student and add new bible verses too.
+				</p>
+				<Slideshow />
+			</div>
 		</div>
 	);
 }

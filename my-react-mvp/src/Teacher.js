@@ -10,7 +10,7 @@ function Teacher() {
 			.then((res) => res.json())
 			.then((json) => {
 				setStudents(json);
-				console.log(json);
+				// console.log(json);
 			})
 			.catch((error) => {});
 	}, []);
@@ -36,8 +36,8 @@ function Teacher() {
 		})
 			.then((response) => response.json())
 			.then((students) => {
-				setStudents(students);
 				console.log(students);
+				setStudents(students);
 			})
 			.catch((error) => {
 				console.log(error);
@@ -66,12 +66,13 @@ function Teacher() {
 			</div>
 			<nav className="navbar navbar-info bg-info justify-content-between">
 			</nav>
+			<br></br>
 			<form className="form" onSubmit={(e) => handleSubmit(e)}>
 				First name:
 				<input
 					className="form"
 					type="text"
-					name="firstname"
+					name="first_name"
 					value={input.first_name}
 					placeholder="Student's name"
 					onChange={(e) => handleChange(e)}
@@ -80,7 +81,7 @@ function Teacher() {
 				<input
 					className="form"
 					type="text"
-					name="lastname"
+					name="last_name"
 					value={input.last_name}
 					placeholder="Student's surname"
 					onChange={(e) => handleChange(e)}
@@ -89,7 +90,7 @@ function Teacher() {
 				<input
 					className="form"
 					type="text"
-					name="lastname"
+					name="age"
 					value={input.age}
 					placeholder="Student's age"
 					onChange={(e) => handleChange(e)}
