@@ -24,8 +24,8 @@ function Navbar() {
 
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul className="navbar-nav ml-auto">
-							<li className="nav-item active">
-								<a className="nav-link" href="#">
+							<li className="nav-item active ml-auto">
+								<a className="nav-link ml-auto" href="#">
 								<Link to="/Home">
 								Home 
 								</Link>

@@ -3,8 +3,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800); */ */ */
 
 
-
- 
 body {
   background-color: #212121;
   display: flex;
@@ -84,7 +82,7 @@ nav a.nav-link {
 }
  
 nav ul li {
-  text-transform: auto;  
+  text-transform: uppercase;  
 }
 
 .navbar-brand {
@@ -96,11 +94,12 @@ nav ul li {
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
+  margin-top: 1.75rem;
   color: var(--primary-white) !important; 
   border-top: 0.1875rem solid var(--primary-dark );
 }
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-blue);
+  border-top: 0.75rem solid var(--primary-blue);
 }
 
 .navbar-nav > li > a:hover {
@@ -175,5 +174,11 @@ h1 {
   .navbar-links.active {
     display: flex;
   } */
+}
 
+@media (max-width: 600px) {
+
+  .home {
+      font-size: 13px;
+  }
 }

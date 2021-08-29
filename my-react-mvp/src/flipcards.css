@@ -1,7 +1,8 @@
-. {
+.hexGrid {
   margin: 0;
   padding: 0;
 }
+
 .hexcards-body {
   background: rgb(128, 232, 255);
 }

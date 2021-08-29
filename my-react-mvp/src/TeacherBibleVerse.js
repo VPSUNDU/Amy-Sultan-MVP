@@ -22,7 +22,7 @@ function TeacherBibleVerse() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		addBibleVerse();
-		setInput({bibleverse: "", biblescripture: ""});
+		setInput({bible_verse: "", bible_scripture: ""});
 	};
 
 	const addBibleVerse = () => {
