@@ -4,7 +4,7 @@
 
 
 body {
-  background-color: #212121;
+  background-color: #a3a3a3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +54,7 @@ textarea {
 /*-----------------------Navbar--------------*/
 
 .App {
-  background-color: rgb(193, 255, 233);
+  background-color: rgb(195, 241, 255);
 }
 
 :root {
