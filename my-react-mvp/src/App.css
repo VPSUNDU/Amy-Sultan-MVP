@@ -147,11 +147,12 @@ h1 {
     }
     
     .css-slideshow{
-    display: flex
-  }
-  /* .toggle-button {
     display: flex;
-  } */
+  }
+
+    .greetingstudent {
+    display: flex;
+  } 
   
   /* .navbar-links {
     display: none;
