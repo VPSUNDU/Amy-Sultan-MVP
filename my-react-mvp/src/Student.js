@@ -14,7 +14,9 @@ function Student() {
 				<h5>
 				You are BRAVER than you believe, STRONGER than you seem and SMARTER than you think.
 				{/* <br></br> */}
-				You are MORE than who you were yesterday. You can START OVER ANYTIME...like NOW is good!
+				You are MORE than who you were yesterday.
+				<br></br>
+				You can START OVER ANYTIME...like NOW is good!
 				<br></br>
 				Let's get started, are you ready to test your memory?
 				</h5>

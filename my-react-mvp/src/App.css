@@ -63,10 +63,10 @@ textarea {
   --primary-dark: rgba(255, 255, 255, 0);
 }
 
-body { 
+/* body { 
    font-style: "Roboto Condesed" sans-serif; 
    background-color: rgb(255, 255, 255);
-} 
+}  */
 
 .logo {
   width: 16.25rem;
@@ -86,9 +86,9 @@ nav ul li {
 }
 
 .navbar-brand {
-  max-width: 17.25rem;
+  max-width: 400px;
   padding: 0 !important;
-  height: 6rem !important;
+  height: 3rem !important;
 }
 
 .navbar-nav > li > a {

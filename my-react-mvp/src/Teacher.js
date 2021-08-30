@@ -67,9 +67,10 @@ function Teacher() {
 			<h2>Hi teach! How are you today? </h2>
 				<h5>
         		A truly AMAZING Sunday School teacher like you is hard to find and impossible to forget. Don't forget that you are making a difference!
-				<br></br>
-				This is what you need to do. Add new bible verses and new students and you're good to go. Have a great day ahead.
 				</h5>
+				<h6>
+				This is what you need to do. Add new bible verses and new students and you're good to go. Have a great day ahead.
+				</h6>
 			<nav className="navbar navbar-info bg-info justify-content-between">
 			</nav>
 			<br></br>
