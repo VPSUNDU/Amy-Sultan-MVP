@@ -1,11 +1,13 @@
 var createError = require('http-errors');
 var express = require('express');
+// var jwt = require ('jasonwebtoken');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var studentsRouter = require('./routes/students');
 var bibleVerseRouter = require('./routes/bibleVerse');
+var teacherRegRouter = require('./routes/teacherReg');
 // var Board = require('./src/Board');
 // var Card = require('./src/Card');
 
@@ -17,12 +19,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.use('/students', studentsRouter);
-app.use('/bible_verse', bibleVerseRouter);
+app.use('/', studentsRouter);
+app.use('/', bibleVerseRouter);
+app.use('/', teacherRegRouter);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(_dirname + '/client/build/index.html'));
-});
+
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(_dirname + '/client/build/index.html'));
+// });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

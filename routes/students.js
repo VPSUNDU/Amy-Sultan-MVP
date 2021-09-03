@@ -11,7 +11,7 @@ const getAllStudents = (req, res) => {
 };
 
 /* GET students listing. */
-router.get("/", function (req, res, next) {
+router.get("/students", function (req, res, next) {
 	// console.log("SELECT * FROM students");
 	db("SELECT * FROM students;")
 		.then((results) => {
@@ -21,7 +21,7 @@ router.get("/", function (req, res, next) {
 });
 
 /* GET one student. */
-router.get("/:id", function (req, res, next) {
+router.get("/students/:id", function (req, res, next) {
 	db(`SELECT * FROM students WHERE id=${req.params.id};`)
 		.then((results) => {
 			res.send(results.data);
@@ -30,7 +30,7 @@ router.get("/:id", function (req, res, next) {
 });
 
 /* INSERT a new student into the DB */
-router.post("/", function (req, res, next) {
+router.post("/students", function (req, res, next) {
 // console.log(`INSERT INTO students(first_name, last_name, class_id)VALUES ("${req.body.first_name}","${req.body.last_name}","${req.body.age}")`);
 	db(
 		`INSERT INTO students(first_name, last_name, age)VALUES ("${req.body.first_name}","${req.body.last_name}","${req.body.age}")`
@@ -42,7 +42,7 @@ router.post("/", function (req, res, next) {
 });
 
 /* DELETE a student from the DB */
-router.delete("/:id", function (req, res, next) {
+router.delete("students/:id", function (req, res, next) {
 	db(`DELETE FROM students WHERE id = ${req.params.id};`)
 		.then((results) => {
 			res.send(results.data);

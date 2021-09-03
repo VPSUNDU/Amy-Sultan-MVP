@@ -31,7 +31,7 @@ router.get("/:id", function (req, res, next) {
   .catch((err) => res.status(500).send(err));
 });
 
-router.post("/", function (req, res, next) {
+router.post("/bible_verse", function (req, res, next) {
   db(`INSERT INTO bible_verse(bible_verse, bible_scripture)VALUES ("${req.body.bible_verse}","${req.body.bible_scripture}")`)
   .then(() => {
     getAllBibleVerse(req, res);
@@ -39,7 +39,7 @@ router.post("/", function (req, res, next) {
   .catch((err) => res.status(404).send(err));
 });
 
-router.delete("/:id", function (req, res, next) {
+router.delete("/bible_verse/:id", function (req, res, next) {
   db(`DELETE FROM bible_verse WHERE id = ${req.params.id}`)
   .then((results) => {
     res.send(results.data);

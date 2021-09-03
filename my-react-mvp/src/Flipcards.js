@@ -1,8 +1,6 @@
 import React from "react";
 import "./flipcards.css";
-import image1 from "./roundBlue.jpg";
 
-const flipCardImages = ["images/roundBlue.jpg"];
 
 function Flipcards() {
 	return (
