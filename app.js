@@ -8,6 +8,7 @@ var logger = require('morgan');
 var studentsRouter = require('./routes/students');
 var bibleVerseRouter = require('./routes/bibleVerse');
 var teacherRegRouter = require('./routes/teacherReg');
+var studentRegRouter = require('./routes/studentReg');
 // var Board = require('./src/Board');
 // var Card = require('./src/Card');
 
@@ -22,6 +23,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.use('/', studentsRouter);
 app.use('/', bibleVerseRouter);
 app.use('/', teacherRegRouter);
+app.use('/', studentRegRouter);
 
 
 // app.get('*', (req, res) => {

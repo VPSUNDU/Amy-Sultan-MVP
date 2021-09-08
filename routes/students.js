@@ -42,7 +42,7 @@ router.post("/students", function (req, res, next) {
 });
 
 /* DELETE a student from the DB */
-router.delete("students/:id", function (req, res, next) {
+router.delete("/students/:id", function (req, res, next) {
 	db(`DELETE FROM students WHERE id = ${req.params.id};`)
 		.then((results) => {
 			res.send(results.data);

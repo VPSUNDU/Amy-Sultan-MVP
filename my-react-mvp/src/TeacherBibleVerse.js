@@ -70,6 +70,7 @@ function TeacherBibleVerse() {
 					placeholder="e.g: Matthew 5:44"
 					onChange={(e) => handleChange(e)}
 				></input>
+				<br></br>
 				Bible Scripture:
 				<input
 					className="form"
@@ -79,7 +80,7 @@ function TeacherBibleVerse() {
 					placeholder="Type in the scriptures" 
 					onChange={(e) => handleChange(e)}
 				></input>
-				
+					<br></br>
 				<button type="resetsearch" class="btn btn-warning">
 					Submit
 				</button>

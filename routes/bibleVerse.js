@@ -15,7 +15,7 @@ const getAllBibleVerse = (req, res) => {
 //   res.render('index', { title: 'Express' });
 // });
 
-router.get("/", function (req, res, next) {
+router.get("/bible_verse", function (req, res, next) {
   db("SELECT * FROM bible_verse;")
   .then((results) => {
     res.send(results.data);
@@ -23,7 +23,7 @@ router.get("/", function (req, res, next) {
   .catch((err) => res.status(500).send(err));
 });
 
-router.get("/:id", function (req, res, next) {
+router.get("/bible_verse/:id", function (req, res, next) {
   db(`SELECT * FROM bible_verse WHERE id=${req.params.id};`)
   .then((results) => {
     res.send(results.data);

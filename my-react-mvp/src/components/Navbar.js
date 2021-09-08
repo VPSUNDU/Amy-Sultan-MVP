@@ -49,15 +49,15 @@ function Navbar() {
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" href="#">
-								<Link to="/Login">
-								Login
+								<Link to="/teacherReg">
+								Teachers' Login
 								</Link>
 								</a>
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" href="#">
-								<Link to="/Reg">
-								Reg
+								<Link to="/StudentLogin">
+								Students' Login
 								</Link>
 								</a>
 							</li>

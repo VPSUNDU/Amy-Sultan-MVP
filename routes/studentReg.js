@@ -7,48 +7,48 @@ const db = require("../model/helper");
 // const jwt = require('jsonwebtoken');
 // router.use(express.json());
 
-const getAllTeacher = (req, res) => {
-	db("SELECT * FROM register ORDER BY id ASC;")
+const getAllstudent = (req, res) => {
+	db("SELECT * FROM studentReg ORDER BY id ASC;")
 		.then((results) => {
 			res.send(results.data);
 		})
 		.catch((err) => res.status(500).send(err));
 };
 
-/* GET teacher listing. */
-router.get("/register", function (req, res, next) {
+/* GET students listing. */
+router.get("/studentReg", function (req, res, next) {
 	// console.log("SELECT * FROM students");
-	db("SELECT * FROM register;")
+	db("SELECT * FROM studentReg;")
 		.then((results) => {
 			res.send(results.data);
 		})
 		.catch(err => res.status(500).send(err));
 });
 
-/* GET teacher. */
-router.get("/register/:id", function (req, res, next) {
-	db(`SELECT * FROM register WHERE id=${req.params.id};`)
+/* GET newStudent. */
+router.get("/studentReg/:id", function (req, res, next) {
+	db(`SELECT * FROM studentReg WHERE id=${req.params.id};`)
 		.then((results) => {
 			res.send(results.data);
 		})
 		.catch((err) => res.status(500).send(err));
 });
 
-//register teacher
-router.post("/register", function (req, res, next) {
+//register newStudent
+router.post("/studentReg", function (req, res, next) {
 	console.log(req.body.firstname, req.body.lastname)
         db(
-            `INSERT INTO register (firstname, lastname, email, password) VALUES ('${req.body.firstname}','${req.body.lastname}','${req.body.email}','${req.body.password}');`
+            `INSERT INTO studentReg (firstname, lastname, email, password) VALUES ('${req.body.firstname}','${req.body.lastname}','${req.body.email}','${req.body.password}');`
         )
         .then(() => {
-          getAllTeacher(req, res);
+          getAllstudent(req, res);
         })
         .catch((err) => res.status(404).send(err));
     });
             
 	/* DELETE a student from the DB */
-router.delete("/register/:id", function (req, res, next) {
-	db(`DELETE FROM register WHERE id = ${req.params.id};`)
+router.delete("/studentReg/:id", function (req, res, next) {
+	db(`DELETE FROM studentReg WHERE id = ${req.params.id};`)
 		.then((results) => {
 			res.send(results.data);
 		})

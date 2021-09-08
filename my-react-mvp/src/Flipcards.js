@@ -31,7 +31,7 @@ function Flipcards() {
 								kerana ini adalah wajar."
 							</p>
 						</div>
-						<a href="#">Read More</a>
+						<a href="https://www.bibleref.com/Ephesians/6/Ephesians-6-1.html#commentary">Read More</a>
 					</div>
 				</div>
 			</div>
@@ -59,7 +59,7 @@ function Flipcards() {
 								musuhmu dan doakan orang yang menganiayamu."
 							</p>
 						</div>
-						<a href="#">Read More</a>
+						<a href="https://www.bibleref.com/Matthew/5/Matthew-5-44.html#commentary">Read More</a>
 					</div>
 				</div>
 			</div>
@@ -85,7 +85,7 @@ function Flipcards() {
 								memberiku kekuatan".
 							</p>
 						</div>
-						<a href="#">Read More</a>
+						<a href="https://lordsguidance.com/blogs/bible-verse-meaning/what-does-philippians-4-13-mean">Read More</a>
 					</div>
 				</div>
 			</div>
@@ -106,7 +106,7 @@ function Flipcards() {
 							<p>All glory to God forever and ever! Amen.</p>
 							<p>Galatia 1:5 "Bagi-Nyalah kemuliaan selama-lamanya! Amin".</p>
 						</div>
-						<a href="#">Read More</a>
+						<a href="https://versebyversecommentary.com/1999/12/01/galatians-15/">Read More</a>
 					</div>
 				</div>
 			</div>
@@ -127,7 +127,7 @@ function Flipcards() {
 							<p>Never stop praying.</p>
 							<p>1 Tesalonika 5:17 "Berdoalah sepanjang masa".</p>
 						</div>
-						<a href="#">Read More</a>
+						<a href="https://www.bibleref.com/1-Thessalonians/5/1-Thessalonians-5-17.html">Read More</a>
 					</div>
 				</div>
 			</div>
@@ -155,7 +155,7 @@ function Flipcards() {
 								dikalahkan".
 							</p>
 						</div>
-						<a href="#">Read More</a>
+						<a href="https://dailyverse.knowing-jesus.com/psalm-55-22">Read More</a>
 					</div>
 				</div>
 			</div>

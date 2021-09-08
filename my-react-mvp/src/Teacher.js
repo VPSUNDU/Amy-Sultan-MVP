@@ -10,7 +10,7 @@ function Teacher() {
 			.then((res) => res.json())
 			.then((json) => {
 				setStudents(json);
-				// console.log(json);
+				console.log(json);
 			})
 			.catch((error) => {});
 	}, []);
@@ -64,7 +64,7 @@ function Teacher() {
 			<nav className="navbar navbar-info bg-info justify-content-between">
 			</nav>
 			<br></br>
-			<h2>Hi teach! How are you today? </h2>
+			<h2>Hi teacher! How are you today? </h2>
 				<h5>
         		A truly AMAZING Sunday School teacher like you is hard to find and impossible to forget. Don't forget that you are making a difference!
 				</h5>
