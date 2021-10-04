@@ -17,7 +17,6 @@ const getAllTeacher = (req, res) => {
 
 /* GET teacher listing. */
 router.get("/register", function (req, res, next) {
-	// console.log("SELECT * FROM students");
 	db("SELECT * FROM register;")
 		.then((results) => {
 			res.send(results.data);

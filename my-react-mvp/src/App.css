@@ -55,10 +55,7 @@ textarea {
 	--primary-dark: rgba(255, 255, 255, 0);
 }
 
-/* body { 
-   font-style: "Roboto Condesed" sans-serif; 
-   background-color: rgb(255, 255, 255);
-}  */
+
 
 .logo {
 	width: 16.25rem;
@@ -145,41 +142,7 @@ h1 {
 		display: flex;
 	}
 
-  .btn-warning {
-	width: 10%;
-    background-color: turquoise;
-	border: 1px solid rgba(90, 66, 66);
-	margin: 35px 0 10px;
-	height: 32px;
-	border-radius: 20px;
-	padding: 0 10px;
-	box-sizing: border-box;
-	outline: none;
-	color: black;
-	cursor: pointer;
-  }
 
-	/* .navbar-links {
-    display: none;
-    width: 100%;
-  }
-  
-  .navbar-links ul {
-    width: 100%;
-    flex-direction: column;
-  }
-  
-  .navbar-links ul li {
-    text-align: center;
-  }
-  
-  .navbar-links ul li a {
-    padding: .5rem 1rem;
-  }
-  
-  .navbar-links.active {
-    display: flex;
-  } */
 }
 
 @media (max-width: 600px) {
@@ -188,68 +151,13 @@ h1 {
 	}
 }
 
-/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, LOGINSignup,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
-/* 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  font-weight: 400;
-  font-family: sans-serif;
-}
-
-body, html, .App, #root, .outer {
-  width: 100%;
-  height: 100%;
-} 
-
-.navbar-light {
-  background-color: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-}
-
-.outer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
-}
-
-.inner {
-  width: 450px;
-  margin: auto;
-  background: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 40px 55px 45px 55px;
-  border-radius: 15px;
-  transition: all .3s;
-}
-
-.outer .form-control:focus {
-  border-color: #167bff;
-  box-shadow: none;
-}
-
-.outer h3 {
-  text-align: center;
-  margin: 0;
-  line-height: 1;
-  padding-bottom: 20px;
-}
-
-.custom-control-label {
-  font-weight: 400;
-} */
 
 /* -------------------------Card_--------------------- */
 
 .form-container {
 	width: 100%;
 	height: 100vh;
-	background-color: rgb(187, 187, 245);
+	background-color:#87cbff;
 	font-family: sans-serif;
 	display: flex;
 	align-items: center;
@@ -261,12 +169,17 @@ body, html, .App, #root, .outer {
 	height: 500px;
 	box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.26);
     perspective: 1000px;
+	background-image: url(regImg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .inner-box {
 	position: relative;
 	width: 100%;
 	height: 100%;
+
 }
 
 .card-front,
@@ -276,15 +189,12 @@ body, html, .App, #root, .outer {
 	height: 100%;
 	background-position: center;
 	background-size: cover;
-	background-image: url(regImg.jpg);
 	padding: 55px;
 	box-sizing: border-box;
 	backface-visibility: hidden;
 }
 
-/* .card-back{
-  transform: rotateY(180deg);
-} */
+
 .card h3 {
 	font-weight: normal;
 	font-size: 24px;
@@ -294,15 +204,16 @@ body, html, .App, #root, .outer {
 
 .input-box {
 	width: 100%;
-	background: transparent;
-	border: 1px solid rgb(90, 66, 66);
+	background: rgba(245, 245, 245, 0.507);
+	border: 1px solid rgba(66, 90, 71, 0.26);
 	margin: 6px 0;
 	height: 32px;
 	border-radius: 20px;
-	padding: 0 10px;
+	padding:  10px;
 	box-sizing: border-box;
-	outline: none;
+	outline:none;
 	text-align: center;
+	font-size: 14px;
 	color: rgba (90, 66, 66);
 }
 
@@ -313,7 +224,7 @@ body, html, .App, #root, .outer {
 
 button {
 	width: 100%;
-	background: transparent;
+	background: rgba(245, 245, 245, 0.507);
 	border: 1px solid rgba(90, 66, 66);
 	margin: 35px 0 10px;
 	height: 32px;
@@ -359,4 +270,27 @@ span{
   text-align: center;
   font-size: 13px;
   margin-top: 8px;
+}
+
+.success-message {
+    font-family: "Roboto", sans-serif;
+    background: whitesmoke;
+    padding: 8px;
+    color:green;
+  }
+
+  .cardStudent {
+	width: 350px;
+	height: 500px;
+	box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.26);
+    perspective: 1000px;
+	background-image: url(regKid.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.href {
+	color: goldenrod;
+	position: relative;
 }

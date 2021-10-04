@@ -3,8 +3,8 @@ import Slideshow from "./components/Slideshow";
 
 function Homepage() {
 	return (
-		<div class="css-slideshow">
-			<div class="css-container">
+		<div className="css-slideshow">
+			<div className="css-container">
 				<h2>Hi, Welcome!</h2>
 				<h5>
         		The most important thing we can have our children memorize is God's Word.

@@ -7,7 +7,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import StudentLogin from "./components/studentLogin";
+import studentReg from "./components/studentReg";
 import teacherReg from "./components/teacherReg";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
 					<Route path="/Home" exact component={Home} />
 					<Route path="/Teacher" component={Teacher} />
 					<Route path="/Student" component={Student} />
-					<Route path="/studentLogin" component={StudentLogin} />
+					<Route path="/studentReg" component={studentReg} />
 					<Route path="/teacherReg" component={teacherReg} />
 				</Switch>
 			</div>

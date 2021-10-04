@@ -6,6 +6,7 @@ const StudentLogin = () => {
 	const [isFlipped, setIsFlipped] = useState(false);
 	const [newStudent, setnewStudent] = useState([]);
 	let [input, setInput] = useState({});
+	let [submitted, setSubmitted] = useState(false);
 
 	useEffect(() => {
 		fetch("/studentReg")
@@ -25,6 +26,7 @@ const StudentLogin = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		addnewStudent();
+		setSubmitted(true);
 		setInput({ firstname: "", lastname: "", email: "", password: "" });
 	};
 
@@ -53,18 +55,18 @@ const StudentLogin = () => {
 	};
 	return (
 		<div className="form-container">
-			<div className="card">
-				<div class="inner-box">
+			<div className="cardStudent">
+				<div className="inner-box">
 					<ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
 						<front className="card-front">
 							<h3>Student's Log in</h3>
 							<form >
-								<input class="input-box"
+								<input className="input-box"
 									type="email"
 									value={input.email}
 									placeholder="Please enter your email"
 									required/>
-								<input class="input-box"
+								<input className="input-box"
 									type="password"
 									value={input.password}
 									placeholder="Enter password"
@@ -77,13 +79,14 @@ const StudentLogin = () => {
 								<button type="button" onClick={handleClick}>
 									I'm New Here
 								</button>
-								<a href="">Forget Password</a>
+								<a className="href" href="">Forget Password</a>
 							</form>
 						</front>
 						<back>
-							<div class="card-back">
+							<div className="card-back">
 								<h3> New Student's Reg</h3>
 								<form onSubmit={(e) => handleSubmit(e)}>
+								{submitted ? <div className="success-message">Thank you for Registering</div> : null}
 									<input class="input-box"
 										type="text"
 										name="firstname"
@@ -91,21 +94,21 @@ const StudentLogin = () => {
 										placeholder="Your First Name"
 										required
 										onChange={(e) => handleChange(e)} />
-									<input class="input-box"
+									<input className="input-box"
 										type="text"
 										name="lastname"
 										value={input.lastname}
 										placeholder="Your Last Name"
 										required
 										onChange={(e) => handleChange(e)} />
-									<input class="input-box"
+									<input className="input-box"
 										type="email"
 										name="email"
 										value={input.email}
 										placeholder="Please enter your email"
 										required
 										onChange={(e) => handleChange(e)} />
-									<input class="input-box"
+									<input className="input-box"
 										type="password"
 										name="password"
 										value={input.password}

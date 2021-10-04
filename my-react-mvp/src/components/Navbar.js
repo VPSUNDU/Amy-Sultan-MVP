@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../components/Logo.png";
-// React Fontawesome Imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom"; 
@@ -56,9 +55,14 @@ function Navbar() {
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" href="#">
-								<Link to="/StudentLogin">
+								<Link to="/StudentReg">
 								Students' Login
 								</Link>
+								</a>
+							</li>
+							<li className="nav-item">
+								<a className="nav-link" href="#">
+								<a href="https://my-en.superbook.cbn.com/games">Bible Games Link</a>
 								</a>
 							</li>
 						</ul>
